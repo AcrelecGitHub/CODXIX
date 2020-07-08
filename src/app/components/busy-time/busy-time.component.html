@@ -1,0 +1,21 @@
+<img class="product__img" [src]="picture" alt="">
+<video class="video" [src]="picture"
+      loop muted autoplay oncanplay="this.play()" 
+		  onloadedmetadata="this.muted = true"></video>
+<div class="container col-xs-12 content-area" *ngFor="let button of buttons">
+  <div class="main-title col-xs-6">
+    <h2 class="product__title">{{button.Caption}}</h2>
+  </div>
+  <div class="item-description col-xs-6">
+    <div class="product col-xs-6">
+      <span class="product__cdesc col-xs-12">{{button.Single}}</span>
+      <span class="product__cprice">{{button.Price / 100 | currency}}</span>
+      <span class="product__ccal col-xs-12">{{button.Calories}}</span>
+    </div>
+    <div class="product col-xs-6">
+      <span class="product__desc col-xs-12">{{button.Combo}}</span>
+      <span class="product__price">{{button.ComboPrice / 100 | currency}}</span>
+      <span class="product__cal col-xs-12">{{button.ComboCalories}}</span>
+    </div>
+  </div>
+</div>

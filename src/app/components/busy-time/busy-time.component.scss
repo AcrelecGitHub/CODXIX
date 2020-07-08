@@ -1,0 +1,49 @@
+.product__img {
+    width: 100%;
+}
+.product__title {
+    line-height: 1;
+    padding-top: 6rem;
+    font-size: 54rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 30rem;
+}
+.content-area {
+    background: white;
+    border-radius: 15rem;
+    margin: 10rem;
+    padding-bottom: 20rem;
+}
+.col-xs-6 {
+    width: 48%;
+}
+.product__cdesc, .product__desc {
+    margin-bottom: 5rem;
+    font-size: 20rem;
+}
+.product__price, .product__cprice {
+    font-size: 45rem;
+    background-color: var(--meeat-green);
+    border-radius: 15%;
+    padding: 10rem;
+}
+.product__ccal, .product__cal {
+    font-size: 24rem;
+    margin-top: 5rem;
+}
+
+.product__cdesc, 
+.product__desc,
+.product__price, 
+.product__cprice  {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.video {
+    width: 100%;
+}
+.product {
+    text-align: center;
+}

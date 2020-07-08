@@ -1,0 +1,10 @@
+<div class="menu-title">
+  <h1 class="title">
+    {{page.Title}}
+  </h1>  
+</div>
+
+<app-buttons-list [buttons]="pageButtons" *ngIf="!isBusy"></app-buttons-list>
+<app-busy-time *ngIf="isBusy"></app-busy-time>
+<app-popular-items></app-popular-items>
+<app-ab-banner #banner></app-ab-banner>

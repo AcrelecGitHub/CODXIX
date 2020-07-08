@@ -1,0 +1,7 @@
+<div [ngSwitch]="currentScreen" class="bg--order-area">
+  <app-page
+    *ngSwitchCase="'Page'"
+    [page]="currentPage"
+  >
+  </app-page>
+</div>
